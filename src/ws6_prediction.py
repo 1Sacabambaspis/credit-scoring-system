@@ -33,7 +33,7 @@ probabilities = model.predict_proba(X_new_scaled)[:, 1]
 # 5. Apply Business Logic & Risk Grouping
 # To compensate for the model's low recall, we lower the risk threshold.
 # If the model thinks there is even a 35% chance of default, we reject it.
-THRESHOLD = 0.35 
+THRESHOLD = 0.5
 
 decisions = []
 risk_groups = []
